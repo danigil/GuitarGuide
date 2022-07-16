@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:id="@+id/colayout">
+
+    <include layout="@layout/songplayer" />
+
+    <RelativeLayout
+        android:id="@+id/MainHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Home"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/Mainlayout1"
+        android:background="@color/Mainorange"
+        app:layout_dodgeInsetEdges="bottom"
+        android:onClick="click"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="460dp">
+
+        <TextView
+            android:id="@+id/TVhometech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Techniques"
+            android:textColor="#ffffff"
+            android:textSize="35dp"
+            />
+
+        <Button
+            android:id="@+id/MainButtonTech"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_below="@id/TVhometech"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/Mainredopaque"
+            android:foreground="@drawable/ic_audiotrack"
+            android:foregroundGravity="center"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Mainlayout2"
+        android:background="@color/Mainred"
+        app:layout_dodgeInsetEdges="bottom"
+        android:onClick="click"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="310dp"
+        >
+
+        <TextView
+            android:id="@+id/TVhomemanu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manufacturers"
+            android:textColor="#ffffff"
+            android:textSize="35dp"
+            android:layout_centerInParent="true"
+            />
+
+        <Button
+            android:id="@+id/MainButtonManu"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_below="@id/TVhomemanu"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/Mainorangeopaque"
+            android:foreground="@drawable/ic_business"
+            android:foregroundGravity="center"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Mainlayout3"
+        android:background="@color/Mainorange"
+        app:layout_dodgeInsetEdges="bottom"
+        android:onClick="click"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="160dp"
+        >
+
+        <TextView
+            android:id="@+id/TVhomeparts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Guitar Parts"
+            android:textColor="#ffffff"
+            android:textSize="35dp"
+            />
+
+        <Button
+            android:id="@+id/MainButtonParts"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_below="@id/TVhomeparts"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/Mainredopaque"
+            android:foreground="@drawable/ic_guitar"
+            android:foregroundGravity="center"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Mainlayout4"
+        android:background="@color/Mainred"
+        app:layout_dodgeInsetEdges="bottom"
+        android:onClick="click"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/TVhomefame"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hall Of Fame"
+            android:textColor="#ffffff"
+            android:textSize="35dp"
+            />
+
+        <Button
+            android:id="@+id/MainButtonFame"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_below="@id/TVhomefame"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/Mainorangeopaque"
+            android:foreground="@drawable/ic_trophy"
+            android:foregroundGravity="center"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

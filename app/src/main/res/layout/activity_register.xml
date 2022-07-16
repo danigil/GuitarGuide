@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegisterActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:id="@+id/colayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="280dp"
+        android:text="Email"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        />
+
+    <EditText
+        android:id="@+id/ETRegisteremail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="200dp"
+        android:textColor="#ffffffff"
+        android:hint="Please enter an email!"
+        android:textColorHint="#ffffffff"
+        android:lines="1"
+        android:inputType="textEmailAddress"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="75dp"
+        android:text="Password"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        />
+
+    <EditText
+        android:id="@+id/ETRegisterpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffffff"
+        android:hint="Please enter a password!"
+        android:textColorHint="#ffffffff"
+        android:lines="1"
+        android:inputType="textPassword"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="140dp"
+        android:text="Confirm Password"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        />
+
+    <EditText
+        android:id="@+id/ETRegisterconfirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="230dp"
+        android:textColor="#ffffffff"
+        android:hint="Please confirm the password!"
+        android:textColorHint="#ffffffff"
+        android:lines="1"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/ButtonRegisterSubmit"
+        app:layout_dodgeInsetEdges="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:text="Register"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

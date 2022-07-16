@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FavoriteTechniquesActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:id="@+id/colayout">
+
+
+    <TextView
+        android:id="@+id/TVFavheader"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Favorites"
+        android:textSize="50dp"
+        android:textColor="#ffffff"
+        />
+
+    <ProgressBar
+        android:id="@+id/Favprogress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:progressTint="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
+        android:indeterminateTint="@color/colorPrimary"
+        />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/Favswiperefresh"
+        app:layout_dodgeInsetEdges="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="650dp"
+        android:layout_gravity="bottom"
+        >
+        <ListView
+            android:id="@+id/Favlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </ListView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

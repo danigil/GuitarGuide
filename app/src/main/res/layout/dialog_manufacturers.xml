@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="@drawable/gradient"
+    >
+
+    <ImageView
+        android:src="@drawable/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/TVManudialog_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="NIBBA"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ButtonManudialog_close"
+            android:background="@drawable/ic_close"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_below="@id/TVManudialog_name"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/TVManudialog_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="hello"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            />
+
+
+    </ScrollView>
+
+</RelativeLayout>

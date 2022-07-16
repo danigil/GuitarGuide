@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "807603120955",
+    "firebase_url": "https://guitarinfo-d39bd.firebaseio.com",
+    "project_id": "guitarinfo-d39bd",
+    "storage_bucket": "guitarinfo-d39bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807603120955:android:457204f721cacd1d43e51e",
+        "android_client_info": {
+          "package_name": "com.melons.melon.guitarguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807603120955-gqo5mpjaipicigfsuhvu57kqpj0ob3i8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.melons.melon.guitarguide",
+            "certificate_hash": "ddcc62211942dd521f89f153e2812b809c89d909"
+          }
+        },
+        {
+          "client_id": "807603120955-nnsvpp00jetoq0tohls3eumldmfsjka4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.melons.melon.guitarguide",
+            "certificate_hash": "4793d1bb878e0448bdc17f47539f7e8849d9114d"
+          }
+        },
+        {
+          "client_id": "807603120955-4iglt1le8kobvn4qiad35108nklafrje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgx00RXOKxs_Rgd1S5D4MzYzlgMJTk-TI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807603120955-4iglt1le8kobvn4qiad35108nklafrje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CreateTechniqueActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:id="@+id/colayout">
+
+    <TextView
+        android:id="@+id/TVCreateheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Create an item"
+        android:textColor="#ffffff"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/TVCreateMainTitle"
+        app:layout_dodgeInsetEdges="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_marginBottom="300dp"
+        android:gravity="left"
+        android:text="Technique name:"
+        android:textColor="#ffffff"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/ETCreateMainTitle"
+        app:layout_dodgeInsetEdges="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_marginBottom="200dp"
+        android:gravity="left"
+        android:textColor="#ffffffff"
+        android:hint="Please enter your technique name!"
+        android:textColorHint="#ffffffff"
+        />
+
+    <TextView
+        android:id="@+id/TVCreateSubTitle"
+        app:layout_dodgeInsetEdges="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_marginBottom="100dp"
+        android:gravity="left"
+        android:text="Category:"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="220dp">
+
+        <RadioGroup
+            android:id="@+id/RGCreate"
+            app:layout_dodgeInsetEdges="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="60dp"
+            >
+
+            <RadioButton
+                android:id="@+id/RBCreate1"
+                app:layout_dodgeInsetEdges="bottom"
+                android:onClick="CheckRB"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:buttonTint="#ffffffff"
+                android:text="Basic"
+                android:textColor="#ffffffff"
+                />
+
+            <RadioButton
+                android:id="@+id/RBCreate2"
+                app:layout_dodgeInsetEdges="bottom"
+                android:onClick="CheckRB"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:buttonTint="#ffffffff"
+                android:text="Advanced"
+                android:textColor="#ffffffff"
+                />
+
+            <RadioButton
+                android:id="@+id/RBCreate3"
+                app:layout_dodgeInsetEdges="bottom"
+                android:onClick="CheckRB"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:buttonTint="#ffffffff"
+                android:text="Finesse"
+                android:textColor="#ffffffff"
+                />
+
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/IVCreate"
+        app:layout_dodgeInsetEdges="bottom"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="150dp"
+        android:text="Create"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/ButtonCreateSubmit"
+        app:layout_dodgeInsetEdges="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:text="Create"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/WHITE"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="10dp"
+    android:id="@+id/songplayer"
+    >
+
+    <TextView
+        android:id="@+id/TVSongname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Press play!"
+        android:textSize="30dp"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/TVSongartist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TVSongname"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        />
+
+    <Button
+        android:id="@+id/Buttonplay"
+        android:background="@drawable/ic_play_circle_filled"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+
+    <Button
+        android:id="@+id/Buttonpause"
+        android:background="@drawable/ic_pause_circle_filled"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/Buttonskipforward"
+        android:background="@drawable/ic_skip_next"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_toRightOf="@id/Buttonplay"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/Buttonskipbackward"
+        android:background="@drawable/ic_skip_previous"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_toLeftOf="@id/Buttonplay"
+        android:layout_marginTop="105dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <SeekBar
+        android:id="@+id/positionBar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Buttonplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:progressTint="@color/colorAccent"
+        android:progressBackgroundTint="#000000"
+        android:progress="0"
+        android:thumbTint="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/TVtotalsonglength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Buttonplay"
+        android:layout_toRightOf="@id/positionBar"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"
+        android:text="0:00"
+        android:textSize="15dp"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/TVremainingsonglength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Buttonplay"
+        android:layout_toLeftOf="@id/positionBar"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        android:text="0:00"
+        android:textSize="15dp"
+        android:textColor="@color/colorAccent"
+        />
+
+
+
+
+
+</RelativeLayout>

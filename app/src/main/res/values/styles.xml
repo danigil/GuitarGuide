@@ -1,0 +1,29 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.Design.Light.NoActionBar">
+
+        <item name="colorPrimary">#AC0000</item>
+        <item name="colorPrimaryDark">#7C0303</item>
+        <item name="colorAccent">#E1182F</item>
+    </style>
+
+    <style name="NoActionBar" parent="Theme.Design.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

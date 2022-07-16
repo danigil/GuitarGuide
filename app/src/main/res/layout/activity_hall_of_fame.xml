@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HallOfFameActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:id="@+id/colayout">
+
+    <TextView
+        android:id="@+id/TVFameheader"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Hall of Fame"
+        android:textSize="50dp"
+        android:textColor="#ffffff"
+        />
+
+    <Button
+        android:id="@+id/ButtonFamename"
+        android:background="@drawable/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Loading..."
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        />
+
+    <ScrollView
+        android:background="@drawable/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/TVFamedesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="28dp"
+            android:textColor="#ffffffff"
+            />
+    </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Famerecycler"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center|bottom">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
